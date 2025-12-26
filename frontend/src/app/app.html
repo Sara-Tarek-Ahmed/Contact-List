@@ -1,7 +1,14 @@
 <h2 style="font-family: Arial, sans-serif;">Contact List</h2>
 
-<ul>
-  <li *ngFor="let contact of contacts">
-    {{ contact.name }} - {{ contact.email }} - {{ contact.phone }}
-  </li>
-</ul>
+<div style="padding: 20px; font-family: sans-serif;">
+  <h2>Contact List</h2>
+
+  <ul style="list-style-type: none; padding: 0;">
+    <li *ngFor="let contact of contacts"
+      style="margin-bottom: 15px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+      <div><strong>Name:</strong> {{ contact.name }}</div>
+      <div><strong>Email:</strong> {{ contact.email }}</div>
+      <div><strong>Phone:</strong> {{ contact.phone }}</div>
+    </li>
+  </ul>
+</div>
